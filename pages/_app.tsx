@@ -1,9 +1,10 @@
 import '../styles/globals.css'
 import '@fontsource/open-sans'
+
 import Layout from '../layouts/layout'
 
 function MyApp({ Component, pageProps }) {
-  return <main style={{ fontFamily : 'Open sans'}}><Layout><Component {...pageProps} /></Layout></main>
+  return <Layout><Component {...pageProps} /></Layout>
 }
 
 export default MyApp

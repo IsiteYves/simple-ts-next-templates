@@ -6,13 +6,13 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children } : LayoutProps) => {
     return (
         <div>
-            <div className="navbar h-screen">
-                <img src="/icons/logo.svg" alt="" className="w-full h-full p-4 bg-[#29B712]" />
-                <div className="pt-4 flex items-center flex-col gap-4 ">
+            <div className=" w-24 shadow-md max-h-screen h-screen ">
+                <img src="/icons/logo.svg" alt="" className="w-full h-fit  p-4 bg-[#29B712]" />
+                <div className=" py-2 flex items-center flex-col gap-6   justify-between">
                     {navbaItems && navbaItems.map(item => (
-                        <div id={item.title} className="flex flex-col gap-2 items-center justify-between">
+                        <div id={item.title} className="flex flex-col gap-2 items-center justify-between py-2 hover:bg-slate-50 duration-100 w-full cursor-pointer">
                             <img src={`/icons/${item.title}.svg`} alt="" />
-                            <span className="uppercase  ">{item.title}</span>
+                            <span className="uppercase  text-[12px] text-nv-tt">{item.title}</span>
                         </div>
                     ))}
                 </div>
