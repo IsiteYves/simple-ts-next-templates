@@ -149,5 +149,4 @@ export const patientDocuments :  PatientDocument[]  = [
         id  : 3,
          name  : "dental X-Ray result"
      },
-    
 ]

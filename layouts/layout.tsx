@@ -8,7 +8,7 @@ const Layout: FC<LayoutProps> = ({ children } : LayoutProps) => {
     const router = useRouter();
     return (
         <div className="flex">
-            <div className=" w-24 shadow-md max-h-screen h-screen sticky top-0">
+            <div className=" w-24 border-r max-h-screen h-screen sticky top-0">
                 <img src="/icons/logo.svg" alt="" className="w-full h-fit  p-4 bg-[#29B712]" />
                 <div className=" py-2 flex items-center flex-col gap-6 justify-between">
                     {navbaItems && navbaItems.map(item => (
