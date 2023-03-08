@@ -1,8 +1,11 @@
 import { FC } from 'react'
 import { userProfile, legendComponents } from '../../data/data'
-
+import {  useRouter }  from 'next/router'
 
 const Patient: FC = () => {
+    const router = useRouter();
+
+
     return (
         <div className=' gap-0  w-full '>
             <h1 className="text-2xl font-bold mt-6">View report</h1>
@@ -23,7 +26,7 @@ const Patient: FC = () => {
                     <span className='font-source text-white'>Download&nbsp;pdf</span>
                 </button>
             </div>
-            <img src="/graphics/graph.svg" alt="" className='w-full my-20' />
+            <img src="/graphics/graph.svg" alt="" className='w-full my-10' />
             <div className="border-t  flex gap-10 items-center py-4">
                 <div className="w-fit flex items-top py-6 gap-6">
                     <div className='w-fit h-fit'>
@@ -31,7 +34,7 @@ const Patient: FC = () => {
                         <div className="data  flex items-center mt-4">
                             <div className='flex flex-col items-center gap-2'>
                                 <span className='capitalize text-sm text-lt-gy font-light'>{"Refresh"}</span>
-                                <button className=''><img src="/icons/refresh.svg" alt="" /></button>
+                                <button className='' onClick={() => router.push("/report-2")}><img src="/icons/refresh.svg" alt="" /></button>
                             </div>
                             <div className='w-[1px] h-[34px] mx-10 bg-gray-300   opacity-70' />
                             <div className='flex flex-col items-center gap-2'>

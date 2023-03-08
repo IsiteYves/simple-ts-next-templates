@@ -8,7 +8,7 @@ const Patient: FC = () => {
     return (
         <div className='flex flex-col  w-full'>
             <div className='w-full border-b border-slate-100 flex items-center'>
-                <input type="text" name="" placeholder='Find by name of phone number' className='text-2xl p-4 outline-none w-full' id="" />
+                <input type="text" name="" placeholder='Find by name of phone number' className='text-2xl py-4  outline-none w-full' id="" />
                 <div className='flex gap-10'>
 
                     <div className="flex items-center gap-4">
