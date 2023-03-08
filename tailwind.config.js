@@ -9,7 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors : {
-        "nv-tt" : "#ECECEC"
+        "nv-tt" : "#ECECEC",
+        "lt-gy" : "#6B6B6B",
+      },
+      fontFamily : {
+        "source" : ['Source sans pro']
       }
     },
   },

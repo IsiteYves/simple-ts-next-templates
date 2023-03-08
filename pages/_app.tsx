@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '@fontsource/open-sans'
+import '@fontsource/source-serif-pro'
 
 import Layout from '../layouts/layout'
 

@@ -24,6 +24,34 @@ interface UserMeta {
 
 }
 
+interface PatientDocument {
+    id : number ,
+    name :  string
+}
+
+interface AptOptions {
+    id : number ,
+    title :string
+    selected : boolean
+}
+
+export const aptOptions : AptOptions[] = [
+    {
+        id : 1 ,
+        title : "Upcoming Appointments",
+        selected :  true
+    },
+    {
+        id : 2,
+        title : "Past Appointments",
+        selected :  false
+    },
+    {
+        id : 3 ,
+        title : "Medical Records",
+        selected :  false
+    },
+]
 export const navbaItems : NavBarItem[] = [
     {
         id : 1 ,
@@ -64,7 +92,7 @@ export const  userProfile : UserProfile  = {
     picture : "/pic.png"
 }
 export const  userMeta : UserMeta = {
-    gender  : "Male",
+    gender  : "Female",
     birthday  : "Feb 24th, 1997" ,
     phone_number : "(239) 555 -0108" ,
     registered_date : "Feb 24th, 1997",
@@ -74,3 +102,23 @@ export const  userMeta : UserMeta = {
     member_status : "Active Member"
 
 }
+
+export const patientDocuments :  PatientDocument[]  = [
+    {
+        id: 1,
+        name: "chech up results"
+    },
+    {
+        id  : 2 ,
+        name  : "check up results"
+    },
+    {
+       id  : 3,
+        name  : "medical prescription "
+    },
+    {
+        id  : 3,
+         name  : "dental X-Ray result"
+     },
+    
+]

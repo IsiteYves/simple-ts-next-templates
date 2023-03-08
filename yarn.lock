@@ -34,6 +34,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.14.tgz#b3e1665c0b3fdfc1f030ded2843749e3cf3a5900"
   integrity sha512-mBXIIETBlW8q/ocuUN0hyGow2iuf75hQEHQt8R/RJ/HcphVbLg8KB7pHYGbFGDqs75W+SWvTC7JkVeAjT65BuQ==
 
+"@fontsource/source-serif-pro@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-serif-pro/-/source-serif-pro-4.5.9.tgz#fbeacd0bb6d2860df6baa662e9827adfe3da13f4"
+  integrity sha512-VgDvUvd3An3v9HtKgYk9TJuhB/4ZXw4huv/uqTXO4gES7CUbqGcf6tSb69TwG6o5AZzEVt6jnN7FN18OaO5J9A==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.8.tgz"
