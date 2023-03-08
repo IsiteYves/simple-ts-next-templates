@@ -35,6 +35,35 @@ interface AptOptions {
     selected : boolean
 }
 
+interface LegendComponent {
+    id : number ,
+    title : string,
+    color : string
+}
+
+export const legendComponents : LegendComponent[] = [
+    {
+        id :  1 ,
+        title :  "PVC - Premature Ventricular Contractions",
+        color : "#61FF17"
+    },
+    {
+        id :  2 ,
+        title :  "PAC - Premature Atrial Contractions",
+        color : "#823C84"
+    },
+    {
+        id :  3 ,
+        title :  "Second Degree - Second Degree Type-1/Type-2",
+        color : "#B9A35F"
+    },
+    {
+        id :  4 ,
+        title :  "NB - Noise on Beat",
+        color : "#6B6B6B"
+    },
+]
+
 export const aptOptions : AptOptions[] = [
     {
         id : 1 ,
