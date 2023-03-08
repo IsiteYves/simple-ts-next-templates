@@ -1,8 +1,14 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
+import {  useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const router = useRouter()
+  useEffect(()=>{
+    router.push('/patient')
+  },[router])
   return (
     <div className={styles.container}>
       <Head>

@@ -21,9 +21,9 @@ const Patient: FC = () => {
             </div>
             <div className='w-full  p-10'>
                 <div className='meta grid grid-cols-4 gap-4 w-full'>
-                    {Object.entries(userMeta).map((data) => {
+                    {Object.entries(userMeta).map((data,index) => {
                         return (
-                            <div className='flex flex-col justify-start gap-4 py-4 border-b border-nv-tt '>
+                            <div className='flex flex-col justify-start gap-4 py-4 border-b border-nv-tt'  key={index}>
                                 <span className='font-normal text-lt-gy'>{data[0]}</span>
                                 <span className='break-keep'>{data[1]}</span>
                             </div>
@@ -45,8 +45,8 @@ const Patient: FC = () => {
                         <div className='flex flex-col gap-4 p-4'>
                             <div className='px-10 py-2 shadow-sm flex  w-full gap-2 bg-white justify-between items-center'>
                                 <div className='flex flex-col justify-start gap-4 py-2  w-fit'>
-                                    <span className='font-bold text-xl'>{"26 Nov '19"}</span>
-                                    <span className='break-keep text-lt-gy'>09.00 -10.00" </span>
+                                    <span className='font-bold text-xl'>26 Nov &quot;19</span>
+                                    <span className='break-keep text-lt-gy'>09.00 -10.00</span>
                                 </div>
                                 <div className='w-[1px] h-12 border-l bg-gray-300' />
                                 <div className='flex flex-col justify-start gap-2 py-4  w-fit'>
@@ -70,7 +70,7 @@ const Patient: FC = () => {
                             <div className='px-10 py-2 shadow-sm flex  w-full gap-2 bg-white justify-between items-center'>
                                 <div className='flex flex-col justify-start gap-4 py-2  w-fit'>
                                     <span className='font-bold text-xl'>{"26 Nov '19"}</span>
-                                    <span className='break-keep text-lt-gy'>09.00 -10.00" </span>
+                                    <span className='break-keep text-lt-gy'>09.00 -10.00</span>
                                 </div>
                                 <div className='w-[1px] h-12 border-l bg-gray-300' />
                                 <div className='flex flex-col justify-start gap-2 py-4  w-fit'>

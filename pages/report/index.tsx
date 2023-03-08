@@ -62,8 +62,8 @@ const Patient: FC = () => {
                 <div className='flex flex-col'>
                     <span className={`text-2xl font-bold } `}>LEGEND</span>
                     {
-                        legendComponents.map((item) => (
-                            <div className='flex items-center gap-2 my-2'>
+                        legendComponents.map((item,index) => (
+                            <div className='flex items-center gap-2 my-2' key={index}>
                                 <div className={`w-3 h-3 rounded-full `}  style={{backgroundColor : item.color }}/><span className='text-sm text-lt-gy'>{item.title}</span>
                             </div>
                         ))

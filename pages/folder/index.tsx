@@ -29,7 +29,7 @@ const Patient: FC = () => {
             </div>
             <div className="map">
                 {  c.map((ct) => (
-                        <div className="flex  items-center justify-between border-b py-2">
+                        <div className="flex  items-center justify-between border-b py-2" key={ct}>
                             <div className='w-fit'>
 
                                 <div className="w-fit flex items-baseline gap-4">
