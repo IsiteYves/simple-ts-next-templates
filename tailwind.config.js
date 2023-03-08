@@ -11,6 +11,7 @@ module.exports = {
       colors : {
         "nv-tt" : "#ECECEC",
         "lt-gy" : "#6B6B6B",
+        "green" : "#29B712"
       },
       fontFamily : {
         "source" : ['Source sans pro']
